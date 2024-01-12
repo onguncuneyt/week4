@@ -20,7 +20,7 @@ public class Game {
         while (true){
 
             player.printInfo();
-            Location[] gameLocations = {new SafeHouse(player),new ToolStore(player),new Cave(player),new Forest(player),new River(player)};
+            Location[] gameLocations = {new SafeHouse(player),new ToolStore(player),new Cave(player),new Forest(player),new River(player),new Mine(player)};
 
             System.out.println();
             System.out.println("#############Bölgeler############## ");
@@ -52,6 +52,9 @@ public class Game {
                     break;
                 case 5:
                     location=new River(player);
+                    break;
+                case 6:
+                    location = new Mine(player);
                     break;
                 default:
                     System.out.println("Lütfen geçerli bir bölge girin");
