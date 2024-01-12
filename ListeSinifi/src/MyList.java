@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyList<T> {
@@ -75,7 +74,7 @@ public class MyList<T> {
 
         return this.capacity;
     }
-    
+
     public T[] getListe() {
         return liste;
     }
